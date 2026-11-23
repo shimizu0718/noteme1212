@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | NoteMe</title>
+    <link rel="stylesheet" href="features.css">
+</head>
+<body>
+
+<header class="site-header">
+    <a href="index.html" class="brand">NoteMe<span>.</span></a>
+
+    <div class="header-actions">
+        <a href="checkout.html" class="header-cart" aria-label="Start checkout">
+            Cart <span class="cart-count">0</span>
+        </a>
+        <a href="pending-orders.html" class="header-link">My Orders</a>
+        <a href="index.html" class="home-button">Home</a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="mainNav"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <nav class="menu-panel" id="mainNav">
+        <div class="menu-title">Explore NoteMe</div>
+        <a href="product-overview.html">Products</a>
+        <a href="design-customization.html">Design Customization</a>
+        <a href="checkout.html" class="active">Checkout</a>
+        <a href="pending-orders.html">My Orders</a>
+        <a href="about-support.html">About &amp; Support</a>
+    </nav>
+</header>
+
+<section class="page-hero">
+    <div class="eyebrow">YOUR ORDER</div>
+    <h1>Almost <em>yours.</em></h1>
+    <p>Review your selected products and total amount before proceeding to checkout.</p>
+</section>
+
+<main class="container">
+
+    <h2 class="section-title">Order Summary</h2>
+    <p class="muted">Check your products and quantities below.</p>
+
+    <div class="form-card table-wrap">
+
+        <table class="checkout-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Description</th>
+                    <th>Quantity</th>
+                    <th>Amount</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody id="checkoutItems"></tbody>
+        </table>
+
+        <div id="emptyCart" class="empty" hidden>
+            Your cart is empty.
+            <a href="product-overview.html">Browse Products</a>
+        </div>
+
+        <div class="total-row">
+            <span>Total</span>
+            <strong id="grandTotal">₱0</strong>
+        </div>
+
+        <button class="btn" id="checkoutButton" type="button">
+            Proceed to Checkout →
+        </button>
+
+    </div>
+</main>
+
+<!-- PAYMENT MODAL -->
+<div class="modal-backdrop" id="paymentModal">
+
+    <section class="modal">
+
+        <button class="close" id="closePayment" type="button" aria-label="Close">
+            ×
+        </button>
+
+        <div class="eyebrow">CONFIRM YOUR ORDER</div>
+        <h2 class="section-title">Your Details & Payment</h2>
+
+        <p class="muted">
+            Please provide your information and select your preferred payment method.
+        </p>
+
+        <form id="paymentForm">
+
+            <label for="customerName">Customer Name</label>
+            <input
+                type="text"
+                id="customerName"
+                name="customerName"
+                placeholder="Enter your full name"
+                required
+            >
+
+            <label for="customerAddress">Delivery / Billing Address</label>
+            <textarea
+                id="customerAddress"
+                name="customerAddress"
+                rows="3"
+                placeholder="Enter your complete address"
+                required
+            ></textarea>
+
+            <label for="paymentMethod">Payment Method</label>
+            <select id="paymentMethod" name="paymentMethod" required>
+                <option value="">Select Payment Method</option>
+                <option value="GCash">GCash (Demo)</option>
+                <option value="Maya">Maya (Demo)</option>
+                <option value="Bank Transfer">Bank Transfer (Demo)</option>
+            </select>
+
+            <label class="confirm-label" for="confirmPayment">
+                <input
+                    type="checkbox"
+                    id="confirmPayment"
+                    name="confirmPayment"
+                    required
+                >
+                <span>I confirm that my name, address, and payment method are correct.</span>
+            </label>
+
+            <button class="btn payment-submit" type="submit">
+                Confirm Order ↗
+            </button>
+
+            <p class="notice" id="paymentStatus" aria-live="polite"></p>
+
+            <p class="muted demo-note">
+                Demo only. No actual payment will be collected.
+            </p>
+
+        </form>
+    </section>
+</div>
+
+<footer class="site-footer">
+    <a class="brand" href="index.html">NoteMe<span>.</span></a>
+
+    <div class="footer-links">
+        <a href="about-support.html#about">About Us</a>
+        <a href="about-support.html#contact">Contact</a>
+    </div>
+
+    <p>NoteMe · Digital things that work for u. © 2026</p>
+</footer>
+
+<script src="features.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#211a35">
+  <title>Sign Up | NoteMe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Lexend:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER (same as the homepage) -->
+  <header class="site-header auth-header">
+    <a href="index.html" class="logo">NoteMe</a>
+
+    <div class="header-actions">
+      <a href="index.html" class="header-link">← Back to Home</a>
+      <a href="login.html" class="header-signup">Log In</a>
+    </div>
+  </header>
+
+  <main class="auth-page">
+
+    <section class="auth-side">
+      <span class="eyebrow">YOUR DIGITAL SPACE, MADE BETTER</span>
+      <h1>Notes that look as good as they work.</h1>
+      <p>Digital notes and document templates for students. Download instantly, or get one designed around your theme and colors.</p>
+      <ul class="auth-perks">
+        <li>✦ Instant downloads</li>
+        <li>✦ Custom designs</li>
+        <li>✦ Made for students</li>
+      </ul>
+    </section>
+
+    <div class="auth-forms">
+      <section class="auth-card signup">
+        <h2>Sign Up</h2>
+        <p class="sub">Make an account</p>
+        <form id="signupForm">
+          <div class="form-row">
+            <div><label for="su-username">Username</label><input type="text" id="su-username" autocomplete="username" required></div>
+            <div><label for="su-name">Name</label><input type="text" id="su-name" autocomplete="name" required></div>
+          </div>
+          <div class="form-row">
+            <div><label for="su-age">Age</label><input type="number" id="su-age" min="1" max="120" required></div>
+            <div><label for="su-email">Email</label><input type="email" id="su-email" autocomplete="email" required></div>
+          </div>
+          <label for="su-address">Address</label>
+          <textarea id="su-address" rows="2" required></textarea>
+          <label for="su-password">Password</label>
+          <input type="password" id="su-password" autocomplete="new-password" minlength="6" required>
+          <div class="hint">Must be more than 5 characters.</div>
+
+          <p class="form-error" id="signupError" role="alert" aria-live="polite"></p>
+
+          <button class="btn block" type="submit">Sign Up</button>
+        </form>
+        <p class="switch">Already have an account? <a href="login.html">Log In</a></p>
+      </section>
+    </div>
+
+  </main>
+
+  <script src="auth.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

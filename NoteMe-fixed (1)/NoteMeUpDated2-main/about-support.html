@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About & Support | NoteMe</title>
+  <link rel="stylesheet" href="features.css">
+</head>
+<body>
+
+<header class="site-header">
+    <a href="index.html" class="brand">NoteMe<span>.</span></a>
+
+    <div class="header-actions">
+        <a href="index.html" class="home-button">Home</a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="mainNav"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <nav class="menu-panel" id="mainNav">
+        <div class="menu-title">Explore NoteMe</div>
+        <a href="product-overview.html">Products</a>
+        <a href="design-customization.html">Design Customization</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="pending-orders.html">My Orders</a>
+        <a href="about-support.html" class="active">About &amp; Support</a>
+    </nav>
+</header>
+
+<section class="page-hero">
+  <div class="eyebrow">GET TO KNOW NOTEME</div>
+  <h1>Digital things<br>that work for <em>u.</em></h1>
+  <p>Learn more about our website and get in touch with us whenever you need assistance.</p>
+</section>
+
+<main class="container">
+
+  <!-- ABOUT US -->
+  <section class="two-col" id="about">
+
+    <div class="about-panel">
+      <div class="eyebrow">ABOUT US</div>
+      <h2>Good ideas start here.</h2>
+
+      <p class="muted">
+        NoteMe is a digital-products marketplace created to make planning,
+        studying, and creating easier.
+      </p>
+
+      <p class="muted">
+        We offer ready-made digital templates and customization services
+        for customers who want designs that fit their needs and personal style.
+      </p>
+
+      <p class="muted">
+        Through NoteMe, customers can explore digital products, view product
+        details, purchase templates, and request customized designs.
+      </p>
+    </div>
+
+    <div>
+      <div class="eyebrow">WHAT WE OFFER</div>
+      <h2 class="section-title">Useful tools, thoughtful designs.</h2>
+
+      <ul class="muted offer-list">
+        <li>Digital planners and journals</li>
+        <li>Study and school templates</li>
+        <li>Creative and business templates</li>
+        <li>Design customization services</li>
+        <li>Customer inquiry and support</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- CUSTOMER SUPPORT -->
+  <section class="two-col contact-section" id="contact">
+
+    <div>
+      <div class="eyebrow">CUSTOMER SUPPORT</div>
+      <h2 class="section-title">How can we help?</h2>
+
+      <p class="muted">
+        Have questions about a product, order, or customization request?
+        Send us a message using the form.
+      </p>
+
+      <p class="muted">
+        <strong>NoteMe Support</strong><br>
+        Product Questions · Order Concerns · Custom Design Inquiries
+      </p>
+    </div>
+
+    <form class="contact-panel" id="contactForm">
+
+      <label>Full Name
+        <input type="text" id="contactName" required placeholder="Your name">
+      </label>
+
+      <label>Email Address
+        <input type="email" id="contactEmail" required placeholder="you@example.com">
+      </label>
+
+      <label>Inquiry Type
+        <select id="inquiryType">
+          <option>General Inquiry</option>
+          <option>Product Concern</option>
+          <option>Order Concern</option>
+          <option>Customization Request</option>
+        </select>
+      </label>
+
+      <label>Your Inquiry or Concern
+        <textarea id="inquiryText" rows="5" required placeholder="Type your message here..."></textarea>
+      </label>
+
+      <button class="btn" type="submit">Submit Inquiry ↗</button>
+
+      <p class="notice" id="contactStatus"></p>
+
+    </form>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <a class="brand" href="index.html">NoteMe<span>.</span></a>
+
+  <div class="footer-links">
+    <a href="product-overview.html">Shop Products</a>
+    <a href="design-customization.html">Customization</a>
+    <a href="#contact">Contact Us</a>
+  </div>
+
+  <p>NoteMe · Digital things that work for u. © 2026</p>
+</footer>
+
+<script src="features.js"></script>
+</body>
+</html>

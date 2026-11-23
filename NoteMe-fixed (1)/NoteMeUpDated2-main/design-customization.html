@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Customization | NoteMe</title>
+  <link rel="stylesheet" href="features.css">
+</head>
+<body>
+
+<header class="site-header">
+    <a href="index.html" class="brand">NoteMe<span>.</span></a>
+
+    <div class="header-actions">
+        <a href="checkout.html" class="header-cart" aria-label="View cart">
+            <span class="cart-label">Cart</span> <span class="cart-count">0</span>
+        </a>
+        <a href="index.html" class="home-button">Home</a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="mainNav"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <nav class="menu-panel" id="mainNav">
+        <div class="menu-title">Explore NoteMe</div>
+        <a href="product-overview.html">Products</a>
+        <a href="design-customization.html" class="active">Design Customization</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="pending-orders.html">My Orders</a>
+        <a href="about-support.html">About &amp; Support</a>
+    </nav>
+</header>
+
+<section class="page-hero">
+  <div class="eyebrow">NOTEME CUSTOM STUDIO</div>
+  <h1>Your colors.<br><em>Your kind of design.</em></h1>
+  <p>Choose a design template and customize it according to your preferred colors and style.</p>
+</section>
+
+<main class="container">
+
+  <h2 class="section-title">Available Design Templates</h2>
+  <p class="muted">Choose the template you want us to customize.</p>
+
+  <div class="grid">
+
+    <article class="card">
+      <div class="product-art">
+        <div class="cover">
+          <small>NOTEME 01</small>
+          <strong>Soft<br>Study</strong>
+          <span>Notes • Review • Plan</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <h3>Soft Study Layout</h3>
+        <p class="muted">Simple and organized pages for class notes and study sessions.</p>
+        <button class="btn btn-small choose-template" data-template="Soft Study Layout">
+          Start Customization
+        </button>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="product-art peach">
+        <div class="cover peach">
+          <small>NOTEME 02</small>
+          <strong>Creative<br>Portfolio</strong>
+          <span>Projects • Ideas • Work</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <h3>Creative Portfolio</h3>
+        <p class="muted">A playful layout for projects and creative work.</p>
+        <button class="btn btn-small choose-template" data-template="Creative Portfolio">
+          Start Customization
+        </button>
+      </div>
+    </article>
+
+    <article class="card">
+      <div class="product-art mint">
+        <div class="cover mint">
+          <small>NOTEME 03</small>
+          <strong>Daily<br>Planner</strong>
+          <span>Plan • Track • Reflect</span>
+        </div>
+      </div>
+      <div class="card-body">
+        <h3>Daily Planner</h3>
+        <p class="muted">A clean planner for schedules and daily priorities.</p>
+        <button class="btn btn-small choose-template" data-template="Daily Planner">
+          Start Customization
+        </button>
+      </div>
+    </article>
+
+  </div>
+
+  <section class="two-col customization-area">
+
+    <div>
+      <div class="eyebrow">MAKE IT YOURS</div>
+      <h2 class="section-title">Send your preferences.</h2>
+      <p class="muted">Tell us your preferred color palette and the changes you want for your selected template.</p>
+
+      <div class="palette-row">
+        <i class="swatch lav"></i>
+        <i class="swatch pink"></i>
+        <i class="swatch cream"></i>
+        <i class="swatch sage"></i>
+        <i class="swatch blue"></i>
+      </div>
+    </div>
+
+    <form class="form-card" id="customForm">
+
+      <label>Selected Template
+        <select id="templateName" required>
+          <option value="Soft Study Layout">Soft Study Layout</option>
+          <option value="Creative Portfolio">Creative Portfolio</option>
+          <option value="Daily Planner">Daily Planner</option>
+        </select>
+      </label>
+
+      <label>Preferred Color Palette
+        <input id="palette" required placeholder="e.g. Lavender, cream, and sage">
+      </label>
+
+      <label>Additional Instructions
+        <textarea id="customNotes" rows="4" placeholder="Describe your preferred design..."></textarea>
+      </label>
+
+      <div class="price-box">
+        <span>Customization Starting Price</span>
+        <strong>₱199</strong>
+      </div>
+
+      <button class="btn" type="submit">Submit Customization Request ↗</button>
+      <p class="notice" id="customStatus"></p>
+
+    </form>
+
+  </section>
+</main>
+
+<footer class="site-footer">
+  <a class="brand" href="index.html">NoteMe<span>.</span></a>
+  <div class="footer-links">
+    <a href="product-overview.html">Products</a>
+    <a href="about-support.html#contact">Contact Us</a>
+  </div>
+  <p>Customization fee starts at ₱199. Final price may vary.</p>
+</footer>
+
+<script src="features.js"></script>
+</body>
+</html>

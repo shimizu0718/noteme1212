@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#211a35">
+    <title>NoteMe | Digital things that work for you</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Lexend:wght@400;500;600;700;800&family=Lilita+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+
+        <a href="index.html" class="logo">
+            NoteMe
+        </a>
+
+        <div class="header-actions">
+
+            <a href="design-customization.html" class="header-link">
+                Customization
+            </a>
+
+            <a href="checkout.html" class="header-link">
+                <span class="cart-label-full">Cart</span><span class="cart-label-short">Cart</span>
+                <span class="cart-count" id="headerCartCount">0</span>
+            </a>
+
+            <a href="login.html" class="header-link" id="loginLink">
+                Log In
+            </a>
+
+            <a href="#" class="header-link" id="logoutBtn" style="display:none;">
+                Log Out
+            </a>
+
+            <a href="signup.html" class="header-signup">
+                Start for Free <span>✦</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+        <!-- HAMBURGER MENU -->
+        <nav class="menu-panel" id="mainNav">
+
+            <p class="menu-title">Explore NoteMe</p>
+
+            <a href="index.html#shop">Browse Products</a>
+            <a href="product-overview.html">Products Overview</a>
+            <a href="design-customization.html">Customization Service <span>✦</span></a>
+            <a href="checkout.html" class="menu-cart">Cart <span class="cart-count">0</span></a>
+            <a href="pending-orders.html">My Orders <span>→</span></a>
+            <a href="about-support.html">About & Support <span>→</span></a>
+
+            <div class="menu-divider"></div>
+
+            <a href="login.html" id="menuLogin">Customer Login <span>→</span></a>
+            <a href="#" id="menuLogout" style="display:none;">Log Out <span>→</span></a>
+            <a href="signup.html" class="menu-signup" id="menuSignup">Create an Account <span>✦</span></a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="hero-copy">
+
+            <span class="eyebrow">YOUR DIGITAL SPACE, MADE BETTER</span>
+
+            <h1>
+                Notes that look as good as they work.
+            </h1>
+
+            <p>
+                Discover digital products designed to make your everyday tasks
+                easier, more organized, and a little more fun.
+            </p>
+
+            <div class="actions">
+
+                <a href="#shop" class="btn">
+                    Browse Products
+                </a>
+
+                <a href="design-customization.html" class="btn light">
+                    Customize Yours
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT COLLAGE -->
+        <div class="hero-art">
+
+            <div class="hero-product product-back">
+                <img src="page-01.jpg" alt="University Series design, image 1">
+            </div>
+
+            <div class="hero-product product-middle">
+                <img src="page-05.jpg" alt="University Series design, image 5">
+            </div>
+
+            <div class="hero-product product-front">
+                <img src="page-08.jpg" alt="Color Combinations design, image 8">
+            </div>
+
+            <div class="floating-label label-top">
+                ✦ Plan your way!
+            </div>
+
+            <div class="floating-label label-bottom">
+                Made for your everyday
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCT SECTION -->
+    <section class="section" id="shop">
+
+        <div class="section-heading">
+
+            <span class="eyebrow">THE NOTEME CANVA COLLECTION</span>
+
+            <h2>Explore all four collections.</h2>
+
+            <p class="sub">
+                Browse the University Series, Color Combinations, Game Series, and Customized Templates.
+            </p>
+
+        </div>
+
+
+        <div class="grid">
+
+            <!-- UNIVERSITY SERIES -->
+            <article class="product">
+
+                <div class="preview p1">
+                    <img src="page-01.jpg" alt="University Series campus template preview" loading="lazy" decoding="async">
+                </div>
+
+                <div class="info">
+
+                    <h3>University Series</h3>
+
+                    <p class="seller">5 Canva pages · campus designs</p>
+                    <a class="btn sm" href="product-overview.html#collection-university-series">Explore Series</a>
+
+                </div>
+
+            </article>
+
+
+            <!-- COLOR COMBINATIONS -->
+            <article class="product">
+
+                <div class="preview p2">
+                    <img src="page-06.jpg" alt="Color Combinations palette template preview" loading="lazy" decoding="async">
+                </div>
+
+                <div class="info">
+
+                    <h3>Color Combinations</h3>
+
+                    <p class="seller">5 Canva pages · palette variations</p>
+                    <a class="btn sm" href="product-overview.html#collection-color-combinations">Explore Palettes</a>
+
+                </div>
+
+            </article>
+
+
+            <!-- GAME SERIES -->
+            <article class="product">
+
+                <div class="preview p3">
+                    <img src="page-11.jpg" alt="Game Series Spider-Man template preview" loading="lazy" decoding="async">
+                </div>
+
+                <div class="info">
+
+                    <h3>Game Series</h3>
+
+                    <p class="seller">5 Canva pages · Spider-Man theme</p>
+                    <a class="btn sm" href="product-overview.html#collection-game-series">Explore Game Series</a>
+
+                </div>
+
+            </article>
+
+
+            <!-- CUSTOMIZED TEMPLATES -->
+            <article class="product">
+
+                <div class="preview p4">
+                    <img src="page-16.jpg" alt="Customized Templates design preview" loading="lazy" decoding="async">
+                </div>
+
+                <div class="info">
+
+                    <h3>Customized Templates</h3>
+
+                    <p class="seller">4 Canva pages · personalized designs</p>
+                    <a class="btn sm" href="product-overview.html#collection-customized-templates">Explore Templates</a>
+
+                </div>
+
+            </article>
+
+        </div>
+
+        <div class="collection-cta">
+            <p>Want to see every design? See all 19 designs from the Canva collection.</p>
+            <a href="product-overview.html#collection" class="btn">Explore More ↗</a>
+        </div>
+
+    </section>
+
+
+    <!-- HOW IT WORKS -->
+    <section class="section how-section">
+
+        <div class="section-heading">
+
+            <span class="eyebrow">A FEW SIMPLE STEPS</span>
+
+            <h2>How NoteMe works.</h2>
+
+            <p class="sub">
+                Getting your digital essentials is easy.
+            </p>
+
+        </div>
+
+
+        <div class="steps">
+
+            <article class="step">
+                <span class="num">01</span>
+                <h3>Explore</h3>
+                <p>Browse our collection and find something you love.</p>
+            </article>
+
+            <article class="step">
+                <span class="num">02</span>
+                <h3>Choose</h3>
+                <p>Select your preferred digital product or design.</p>
+            </article>
+
+            <article class="step">
+                <span class="num">03</span>
+                <h3>Customize</h3>
+                <p>Personalize your selected design to match your style.</p>
+            </article>
+
+            <article class="step">
+                <span class="num">04</span>
+                <h3>Enjoy</h3>
+                <p>Complete your order and enjoy your digital essentials.</p>
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <a href="index.html" class="logo">
+            NoteMe
+        </a>
+
+        <p>Digital things that work for you.</p>
+
+        <div class="footer-links">
+            <a href="about-support.html#about">About Us</a>
+            <a href="design-customization.html">Customization</a>
+            <a href="about-support.html#contact">Contact Us</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 NoteMe. All rights reserved.
+        </p>
+
+
+    </footer>
+
+
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteMe | My Orders</title>
+
+    <link rel="stylesheet" href="features.css">
+    <link rel="stylesheet" href="pending-orders.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+    <a href="index.html" class="brand">NoteMe<span>.</span></a>
+
+    <div class="header-actions">
+        <a href="checkout.html" class="header-cart" aria-label="View cart">
+            <span class="cart-label">Cart</span> <span class="cart-count">0</span>
+        </a>
+        <a href="index.html" class="home-button">Home</a>
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+            aria-controls="mainNav"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+
+    <nav class="menu-panel" id="mainNav">
+        <div class="menu-title">Explore NoteMe</div>
+        <a href="product-overview.html">Products</a>
+        <a href="design-customization.html">Design Customization</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="pending-orders.html" class="active">My Orders</a>
+        <a href="about-support.html">About &amp; Support</a>
+    </nav>
+</header>
+
+    <!-- HERO -->
+    <section class="page-hero orders-hero">
+        <span class="eyebrow">YOUR NOTE ME PURCHASES</span>
+        <h1>My <em>Orders.</em></h1>
+        <p>
+            Keep track of your digital products, customization requests,
+            and completed orders all in one place.
+        </p>
+    </section>
+
+    <main class="container orders-container">
+
+        <!-- ORDER SUMMARY -->
+        <section class="order-summary">
+
+            <div class="summary-card">
+                <span class="summary-icon">❒</span>
+                <div>
+                    <p>Total Orders</p>
+                    <h2 id="totalOrders">0</h2>
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <span class="summary-icon">⌛︎</span>
+                <div>
+                    <p>Pending Orders</p>
+                    <h2 id="pendingOrders">0</h2>
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <span class="summary-icon">✦</span>
+                <div>
+                    <p>In Progress</p>
+                    <h2 id="progressOrders">0</h2>
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <span class="summary-icon">✉</span>
+                <div>
+                    <p>Delivered</p>
+                    <h2 id="deliveredOrders">0</h2>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- ORDER TABS -->
+        <section class="orders-section">
+
+            <div class="orders-heading">
+                <div>
+                    <span class="eyebrow">ORDER HISTORY</span>
+                    <h2 class="section-title">Your purchases</h2>
+                    <p class="muted">Check the latest updates on your orders.</p>
+                </div>
+            </div>
+
+            <div class="order-tabs">
+                <button class="order-tab active" data-filter="all">
+                    All Orders
+                </button>
+
+                <button class="order-tab" data-filter="pending">
+                    Pending
+                </button>
+
+                <button class="order-tab" data-filter="progress">
+                    In Progress
+                </button>
+
+                <button class="order-tab" data-filter="delivered">
+                    Delivered
+                </button>
+            </div>
+
+            <!-- ORDERS WILL APPEAR HERE -->
+            <div id="ordersList" class="orders-list"></div>
+
+        </section>
+
+        <!-- INFORMATION -->
+        <section class="order-info">
+
+            <div class="info-box">
+                <span>⌯⌲</span>
+                <div>
+                    <h3>Ready-made Templates</h3>
+                    <p>
+                        Your order will be reviewed by our admins first.
+                        Once confirmed, your digital product will be marked
+                        as delivered.
+                    </p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <span>✎𓂃</span>
+                <div>
+                    <h3>Customized Products</h3>
+                    <p>
+                        Customization requests usually take
+                        <strong>3 business days</strong> to complete after
+                        checkout confirmation.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div>
+            <a href="index.html" class="brand">NoteMe<span>.</span></a>
+            <p>Digital things that work for u.</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="product-overview.html">Products</a>
+            <a href="about-support.html">Support</a>
+        </div>
+    </footer>
+
+    <script src="features.js"></script>
+    <script src="pending-orders.js"></script>
+
+</body>
+</html>

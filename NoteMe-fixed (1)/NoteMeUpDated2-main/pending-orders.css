@@ -1,0 +1,385 @@
+
+/* ========================================
+   PENDING ORDERS PAGE
+======================================== */
+
+.orders-hero {
+    background:
+        radial-gradient(ellipse at 15% 20%, rgba(185,154,221,.25), transparent 40%),
+        radial-gradient(ellipse at 85% 80%, rgba(233,183,208,.2), transparent 38%),
+        linear-gradient(120deg, #352943, #493653 55%, #382c4b);
+}
+
+.orders-container {
+    padding-top: 55px;
+}
+
+/* SUMMARY CARDS */
+
+.order-summary {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 17px;
+    margin-bottom: 65px;
+}
+
+.summary-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 22px 18px;
+    background: linear-gradient(145deg, #493a5a, #352b46);
+    border: 1px solid #665477;
+    border-radius: 17px;
+    box-shadow: 0 10px 25px #17102025;
+    transition: .2s ease;
+}
+
+.summary-card:hover {
+    transform: translateY(-4px);
+    border-color: #b99add;
+}
+
+.summary-icon {
+    width: 43px;
+    height: 43px;
+    display: grid;
+    place-items: center;
+    background: #5a466c;
+    border-radius: 13px;
+    font-size: 20px;
+}
+
+.summary-card p {
+    margin: 0 0 5px;
+    font-size: 11px;
+    color: #c0b4ce;
+}
+
+.summary-card h2 {
+    margin: 0;
+    font: 800 27px Manrope, sans-serif;
+    color: #f3d99a;
+}
+
+/* ORDER SECTION */
+
+.orders-section {
+    margin-bottom: 55px;
+}
+
+.orders-heading {
+    margin-bottom: 25px;
+}
+
+.orders-heading .section-title {
+    margin: 8px 0;
+}
+
+/* FILTER TABS */
+
+.order-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+    padding-bottom: 17px;
+    border-bottom: 1px solid #554765;
+}
+
+.order-tab {
+    padding: 11px 19px;
+    background: #40334f;
+    color: #d9cce5;
+    border: 1px solid #675477;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 800;
+    transition: .2s;
+}
+
+.order-tab:hover {
+    border-color: #c5a5e8;
+    color: #fff;
+}
+
+.order-tab.active {
+    background: #c9a9e8;
+    border-color: #c9a9e8;
+    color: #342642;
+}
+
+/* ORDER CARDS */
+
+.orders-list {
+    display: grid;
+    gap: 20px;
+}
+
+.order-card {
+    padding: 25px;
+    background: linear-gradient(145deg, #40334f, #352b46);
+    border: 1px solid #665477;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px #17102025;
+}
+
+.order-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #594a6b;
+}
+
+.order-id {
+    font-size: 11px;
+    font-weight: 800;
+    color: #d0b4f2;
+    letter-spacing: .08em;
+}
+
+.order-date {
+    margin-top: 7px;
+    font-size: 11px;
+    color: #bdb0ca;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 13px;
+    border-radius: 30px;
+    font-size: 10px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.status-pending {
+    background: #665438;
+    color: #ffe3a1;
+}
+
+.status-progress {
+    background: #51436c;
+    color: #dfc8ff;
+}
+
+.status-delivered {
+    background: #38594c;
+    color: #c6efd8;
+}
+
+/* ORDER ITEMS */
+
+.order-items {
+    padding: 18px 0;
+    display: grid;
+    gap: 12px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    color: #f5eafa;
+    font-size: 13px;
+}
+
+.order-item small {
+    display: block;
+    margin-top: 5px;
+    color: #bdb0ca;
+    font-size: 11px;
+}
+
+.order-item-price {
+    color: #f3d99a;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+/* ORDER TYPE AND ESTIMATED DATE */
+
+.order-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-top: 5px;
+}
+
+.order-detail-box {
+    padding: 15px;
+    background: #493a5a;
+    border: 1px solid #675477;
+    border-radius: 12px;
+}
+
+.order-detail-box span {
+    display: block;
+    color: #c0b4ce;
+    font-size: 10px;
+    margin-bottom: 7px;
+}
+
+.order-detail-box strong {
+    font-size: 12px;
+    color: #f7efff;
+}
+
+/* STATUS MESSAGE */
+
+.order-message {
+    margin-top: 18px;
+    padding: 15px 17px;
+    border-radius: 12px;
+    background: #51436c;
+    color: #e5d7f4;
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.order-message strong {
+    color: #f3d99a;
+}
+
+/* TOTAL */
+
+.order-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding-top: 18px;
+    margin-top: 18px;
+    border-top: 1px solid #594a6b;
+}
+
+.order-bottom span {
+    color: #c0b4ce;
+    font-size: 12px;
+}
+
+.order-bottom strong {
+    font: 800 21px Manrope, sans-serif;
+    color: #f3d99a;
+}
+
+/* EMPTY STATE */
+
+.empty-orders {
+    padding: 55px 20px;
+    text-align: center;
+    background: #352b46;
+    border: 1px dashed #79658d;
+    border-radius: 18px;
+}
+
+.empty-orders .empty-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.empty-orders h3 {
+    font: 800 22px Manrope, sans-serif;
+    color: #f7efff;
+}
+
+.empty-orders p {
+    color: #c0b4ce;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+/* INFORMATION BOXES */
+
+.order-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    margin-top: 45px;
+}
+
+.info-box {
+    display: flex;
+    gap: 15px;
+    padding: 23px;
+    background: #40334f;
+    border: 1px solid #665477;
+    border-radius: 15px;
+}
+
+.info-box > span {
+    font-size: 25px;
+}
+
+.info-box h3 {
+    margin: 0 0 8px;
+    font: 800 15px Manrope, sans-serif;
+    color: #f7efff;
+}
+
+.info-box p {
+    margin: 0;
+    color: #c0b4ce;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.info-box strong {
+    color: #f3d99a;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 900px) {
+    .order-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 600px) {
+    .order-summary {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .summary-card {
+        padding: 15px 11px;
+        gap: 9px;
+    }
+
+    .summary-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 16px;
+    }
+
+    .summary-card h2 {
+        font-size: 22px;
+    }
+
+    .summary-card p {
+        font-size: 10px;
+    }
+
+    .order-top {
+        flex-direction: column;
+    }
+
+    .order-details,
+    .order-info {
+        grid-template-columns: 1fr;
+    }
+
+    .order-card {
+        padding: 18px;
+    }
+
+    .order-bottom {
+        align-items: flex-start;
+    }
+}
